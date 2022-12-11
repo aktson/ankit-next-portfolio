@@ -232,11 +232,9 @@ h1 {
 		@apply flex w-full;
 	}
 	.skills {
-		@apply flex flex-col justify-center items-center gap-3 p-2 w-36 sm:w-40 tooltip  bg-warning rounded-lg shadow-xl;
+		@apply flex flex-col justify-center items-center gap-3 p-2 w-36 sm:w-40 h-full tooltip  bg-warning rounded-lg shadow-xl;
 	}
-	.tech-logos {
-		@apply w-8;
-	}
+
 	/* footer */
 	.footer {
 		background: var(--gradient-secondary);

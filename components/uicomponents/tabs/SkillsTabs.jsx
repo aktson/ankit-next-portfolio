@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import { baseUrl } from "../../constants/settings";
 import Loader from "../Loader";
 import useFetch from "../../customHook/useFetch";
-// import Fade from "react-reveal/Fade";
 import SkillsTabContent from "./SkillsTabContent";
 import LangContext from "../../context/LangContext";
 

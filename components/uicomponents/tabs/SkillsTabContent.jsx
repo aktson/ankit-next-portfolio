@@ -1,5 +1,5 @@
 import React from "react";
-// import Flip from "react-reveal/Flip";
+import Image from "next/image";
 
 function TabsInner({ data }) {
 	return (
@@ -10,7 +10,7 @@ function TabsInner({ data }) {
 						// <Flip right cascade >
 						<div key={result.id}>
 							<div className="skills tooltip-neutral text-base-100" data-tip={result.attributes.title}>
-								<img src={result.attributes.img.data.attributes.url} alt={result.attributes.title} className="tech-logos " />
+								<Image src={result.attributes.img.data.attributes.url} alt={result.attributes.title} width={32} height={32} />
 								<p>{result.attributes.title}</p>
 							</div>
 						</div>
