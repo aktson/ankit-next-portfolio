@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import ankit from "../../public/assets/ankitLightGray.jpg";
+import ankit from "../../public/images/ankitLightGray.jpg";
 import CardsAbout from "../uicomponents/CardsAbout";
 import Image from "next/image";
 // import Zoom from "react-reveal/Zoom";

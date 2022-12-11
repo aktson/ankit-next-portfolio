@@ -6,8 +6,8 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { SideBar } from "./mobile-nav/SideBar";
 import Themes from "../uicomponents/Themes";
 import LanguageSelect from "../uicomponents/LanguageSelect";
-import lightLogo from "../../public/assets/logo-light.svg";
-import darkLogo from "../../public/assets/logo-dark.svg";
+import lightLogo from "../../public/images/logo-light.svg";
+import darkLogo from "../../public/images/logo-dark.svg";
 
 function Header() {
 	const { isEng, isChecked } = useContext(LangContext);
