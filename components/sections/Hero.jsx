@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-scroll";
+import Image from "next/image";
 // import Header from "../layout/Header";
 // import Zoom from "react-reveal/Zoom";
 import LangContext from "../context/LangContext";
@@ -8,16 +9,14 @@ import bgLight from "../../public/assets/hero.svg";
 
 function Hero() {
 	const { isEng, isChecked } = useContext(LangContext);
+	const style = {
+		backgroundImage: ` url(${isChecked ? bgDark : bgLight})`,
+		backgroundSize: "cover",
+		backgroundRepeat: "no-repeat",
+		backgroundPosition: "center",
+	};
 	return (
-		<section
-			id="hero"
-			className=" flex flex-col justify-center h-screen "
-			style={{
-				backgroundImage: ` url(${isChecked ? bgDark : bgLight})`,
-				backgroundSize: "cover",
-				backgroundRepeat: "no-repeat",
-				backgroundPosition: "center",
-			}}>
+		<section id="hero" className={` flex flex-col justify-center h-screen ${isChecked ? " bg-dark" : "bg-light"}`}>
 			{/* <Header /> */}
 			<div className="container  mx-auto px-1 relative flex items-center justify-center text-center">
 				<div className="p-2 max-w-md w-full">

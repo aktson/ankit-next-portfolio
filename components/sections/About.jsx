@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import ankit from "../../public/assets/ankitLightGray.jpg";
 import CardsAbout from "../uicomponents/CardsAbout";
+import Image from "next/image";
 // import Zoom from "react-reveal/Zoom";
 // import Flip from "react-reveal/Flip";
 import LangContext from "../context/LangContext";
@@ -20,7 +21,7 @@ function About() {
 				<div className="p-2  flex flex-col items-center text-center" id="about-img">
 					{/* <Zoom bottom cascade> */}
 					<figure>
-						<img src={ankit} alt="ankit soni" className="h-60 w-60 mb-8 mask mask-hexagon-2 "></img>
+						<Image src={ankit} alt="ankit soni" className="mb-8 mask mask-hexagon-2 " width={240} height={240} />
 					</figure>
 					{/* </Zoom> */}
 					<div className="max-w-xl">

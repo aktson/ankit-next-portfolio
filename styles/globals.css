@@ -321,3 +321,15 @@ h1 {
 	opacity: 1;
 	transform: scale(1.3);
 }
+.bg-light {
+	background-image: url("../public/assets/hero.svg");
+	background-size: "cover";
+	background-repeat: "no-repeat";
+	background-position: "center";
+}
+.bg-dark {
+	background-image: url("../public/assets/hero-dark.svg");
+	background-size: "cover";
+	background-repeat: "no-repeat";
+	background-position: "center";
+}

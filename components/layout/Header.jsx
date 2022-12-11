@@ -12,35 +12,33 @@ import darkLogo from "../../public/assets/logo-dark.svg";
 function Header() {
 	const { isEng, isChecked } = useContext(LangContext);
 
-	// let height;
-	// if (typeof window !== "undefined") {
-	// 	height = window.scrollingElement.scrollHeight;
-	// }
-	// const [y, setY] = useState(height);
+	const [scrollY, setScrollY] = useState(0);
 
 	const [showNavBar, setShowNavBar] = useState("");
 
-	// const handleNavigation = useCallback(
-	// 	(e) => {
-	// 		if (typeof window !== "undefined") {
-	// 			if (y > window.scrollY) {
-	// 				setShowNavBar("");
-	// 			} else if (y < window.scrollY) {
-	// 				setShowNavBar("-translate-y-32");
-	// 			}
-	// 			setY(window.scrollY);
-	// 		}
-	// 	},
-	// 	[y]
-	// );
+	const handleNavigation = useCallback(
+		(e) => {
+			if (typeof window !== "undefined") {
+				setScrollY(window.scrollY);
 
-	// useEffect(() => {
-	// 	window.addEventListener("scroll", handleNavigation);
+				if (scrollY > window.scrollY) {
+					setShowNavBar("");
+				} else if (scrollY < window.scrollY) {
+					setShowNavBar("-translate-y-32");
+				}
+				setScrollY(window.scrollY);
+			}
+		},
+		[scrollY]
+	);
 
-	// 	return () => {
-	// 		window.removeEventListener("scroll", handleNavigation);
-	// 	};
-	// }, [handleNavigation]);
+	useEffect(() => {
+		window.addEventListener("scroll", handleNavigation);
+
+		return () => {
+			window.removeEventListener("scroll", handleNavigation);
+		};
+	}, [handleNavigation]);
 
 	return (
 		<header
