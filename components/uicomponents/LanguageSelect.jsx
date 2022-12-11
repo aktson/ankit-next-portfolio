@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import Image from "next/image";
 import LangContext from "../context/LangContext";
 import engFlag from "../../public/assets/united-states.png";
 import norFlag from "../../public/assets/norway.png";
@@ -17,7 +18,7 @@ function LanguageSelect() {
 	return (
 		<div className="flex items-center ">
 			<figure>
-				{isEng ? <img src={engFlag} alt="american flag" className="w-8" /> : <img src={norFlag} alt="norwegian flag" className="w-8" />}
+				<Image src={isEng ? engFlag : norFlag} alt={isEng ? "american flag" : "norwegian flag"} width={25} height={25} />
 			</figure>
 			<select
 				className="select w-18 border-none  outline-0 focus:outline-transparent focus:border-transparent text-base-100 sm:text-primary bg-transparent "

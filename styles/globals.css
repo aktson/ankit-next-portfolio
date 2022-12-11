@@ -1,10 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Metal&family=Philosopher&family=Martel+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Martel+Sans&display=swap");
 /* debug-twcss/styles/global.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url("https://fonts.googleapis.com/css2?family=Metal&family=Philosopher&family=Martel+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Martel+Sans&display=swap");
 
 :root {
 	--primary: #570df8;
