@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import Image from "next/image";
 import LangContext from "../context/LangContext";
-import engFlag from "../../public/assets/united-states.png";
-import norFlag from "../../public/assets/norway.png";
+import engFlag from "../../public/images/united-states.png";
+import norFlag from "../../public/images/norway.png";
 
 function LanguageSelect() {
 	const { setIsEng, isEng } = useContext(LangContext);
