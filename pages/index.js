@@ -10,8 +10,7 @@ export default function Home() {
       <Head>
         <title>Ankit Soni Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="favicon.ico" />
-        <meta name="theme-color" content="#000000" />
+        <link rel="icon" href="/favicon.ico" />
         <meta name="author" content="Ankit Soni" />
         <meta name="description" content="Ankit Soni - Kreative profesjonell Front-end Utvikler/ Creative professional front-end developer" />
         <meta name="keywords" content="ankit, soni, Ankit Soni, oslo, web development, javascript, HTML, CSS3, reactJs, nextJs, norge, norway, web designer, web utvikler, front end developer, front end utvikler" />
