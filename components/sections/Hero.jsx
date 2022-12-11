@@ -4,8 +4,6 @@ import Image from "next/image";
 // import Header from "../layout/Header";
 // import Zoom from "react-reveal/Zoom";
 import LangContext from "../context/LangContext";
-import bgDark from "../../public/assets/hero-dark.svg";
-import bgLight from "../../public/assets/hero.svg";
 
 function Hero() {
 	const { isEng, isChecked } = useContext(LangContext);
