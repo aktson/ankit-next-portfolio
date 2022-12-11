@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaAngleLeft, FaAngleRight, FaDotCircle } from "react-icons/fa";
-// import Fade from "react-reveal/Fade";
 
 function Slider({ data, length }) {
 	const [current, setCurrent] = useState(0);
@@ -27,7 +26,6 @@ function Slider({ data, length }) {
 				{index === current && (
 					// <Fade>
 					<div className="h-96 min-h-full" style={{ background: `url(${sliderImage}) no-repeat center`, backgroundSize: "cover" }}></div>
-					// <img src={sliderImage} alt="" className="w-full object-cover max-w-5xl " />
 					// </Fade>
 				)}
 			</div>
