@@ -1,0 +1,5 @@
+09:21:03:505 [WARN]	WGudeRequest::applyAutoDetectProxyAutoConfigSettings Failed to autodetect proxy settings. The operation completed successfully.
+, last error code = 0 
+09:21:04:800 [WARN]	proxy setting delay exceeds threshold: 1.296086 secs
+09:21:05:000 [WARN]	Request Failed. ErrorCode: 112007 errorMessage: Platform Status, Send Request Failed. WinHTTP Name Not Resolved. last error code = 12007 
+09:21:05:280 [WARN]	Request Failed. ErrorCode: 112007 errorMessage: Platform Status, Send Request Failed. WinHTTP Name Not Resolved. last error code = 12007 
