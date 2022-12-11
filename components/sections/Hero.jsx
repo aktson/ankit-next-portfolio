@@ -4,12 +4,15 @@ import Image from "next/image";
 // import Header from "../layout/Header";
 // import Zoom from "react-reveal/Zoom";
 import LangContext from "../context/LangContext";
+import bgLight from "../../public/images/hero.svg";
+import bgDark from "../../public/images/hero-dark.svg";
 
 function Hero() {
 	const { isEng, isChecked } = useContext(LangContext);
 
 	return (
-		<section id="hero" className={` flex flex-col justify-center h-screen ${isChecked ? " bg-dark" : "bg-light"}`}>
+		<section id="hero" className={` flex flex-col justify-center h-screen relative`}>
+			<Image src={isChecked ? bgDark : bgLight} alt="background vector wavees" layout="fill" />
 			{/* <Header /> */}
 			<div className="container  mx-auto px-1 relative flex items-center justify-center text-center">
 				<div className="p-2 max-w-md w-full">
