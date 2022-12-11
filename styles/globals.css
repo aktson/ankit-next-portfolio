@@ -320,12 +320,12 @@ h1 {
 	transform: scale(1.3);
 }
 .bg-light {
-	background: url("../public/assets/hero.svg") center no-repeat;
+	background: url("../public/hero.svg") center no-repeat;
 	background-size: "cover";
 	height: 100vh;
 }
 .bg-dark {
-	background: url("../public/assets/hero-dark.svg") center no-repeat;
+	background: url("../public/hero-dark.svg") center no-repeat;
 	background-size: "cover";
 	height: 100vh;
 }
