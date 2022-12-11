@@ -48,7 +48,7 @@ function Header() {
 			<div className="container flex justify-around md:justify-between gap-2 p-4 py-4 items-center flex-col sm:flex-row sm:bg-warning sm:shadow-xl rounded-full ">
 				{/* logo */}
 				<figure className=" xl:w-96 p-2 ml-3" onClick={() => scroll.scrollToTop()}>
-					<Image src={isChecked ? darkLogo : lightLogo} alt="ankit soni logo" width={75} height={75} />
+					<Image src={isChecked ? darkLogo : lightLogo} alt="ankit soni logo" width={55} height={55} />
 				</figure>
 				{/* navigation for large screens */}
 				<nav className="hidden lg:flex items-center w-full justify-center">
