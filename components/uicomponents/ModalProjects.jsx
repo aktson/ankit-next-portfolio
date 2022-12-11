@@ -27,10 +27,8 @@ function ModalProjects({ data, onClose, open, length }) {
 						transition={{ type: "spring", bounce: 0.4, duration: 0.6 }}>
 						<Slider data={data} length={length} />
 						<div className="card-body bg-base-100">
-							<h3 className="card-title flex flex-col">
-								<span className="flex justify-start text-2xl mb-2">{results.title}</span>
-								<div className=" badge badge-primary badge-outline p-5 ">{results.stack}</div>
-							</h3>
+							<h3 className="card-title text-2xl mb-0">{results.title}</h3>
+							<p className=" badge badge-primary badge-outline p-5 mb-3 ">{results.stack}</p>
 							<p className=" mb-5 line-break overflow-y-auto styledScrollbar h-full">
 								{isEng ? results.summaryEnglish : results.summary}
 							</p>
