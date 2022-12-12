@@ -15,15 +15,16 @@ function Hero() {
 			<Image src={isChecked ? bgDark : bgLight} alt="background vector wavees" layout="fill" />
 			{/* <Header /> */}
 			<div className="container  mx-auto px-1 relative flex items-center justify-center text-center">
-				<div className="p-2 max-w-md w-full">
+				<div className="p-2 max-w-xl w-full">
 					<h1>
 						{/* <Zoom top cascade> */}
-						{isEng ? "HELLO I'M" : "Hei! Jeg heter"}
+						<span className="text-4xl">{isEng ? "HELLO I'M" : "Hei! Jeg er"}</span>
+						<br />
 						<span className="text-primary"> ANKIT SONI,</span>
 						{/* </Zoom> */}
 						<br />
 						{/* <Zoom left cascade> */}
-						<span>Front-end {isEng ? "developer" : "utvikler"}</span>
+						<span className="text-4xl">Front-end {isEng ? "developer" : "utvikler"} & Web Designer</span>
 						{/* </Zoom> */}
 					</h1>
 					{/* <Zoom cascade> */}
