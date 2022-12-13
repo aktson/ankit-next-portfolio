@@ -2,9 +2,12 @@ import Head from 'next/head'
 import Footer from '../components/layout/Footer'
 import Main from '../components/layout/Main'
 import Header from '../components/layout/Header'
+import React from 'react'
 
 
-export default function Home() {
+
+export default function Home({ skills }) {
+
   return (
     <>
       <Head>
@@ -13,11 +16,34 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <meta name="author" content="Ankit Soni" />
         <meta name="description" content="Ankit Soni - Kreative profesjonell Front-end Utvikler/ Creative professional front-end developer" />
-        <meta name="keywords" content="ankit, soni, Ankit Soni, oslo, web development, javascript, HTML, CSS3, reactJs, nextJs, norge, norway, web designer, web utvikler, front end developer, front end utvikler" />
+        <meta name="keywords" content="ankit, soni, Ankit Soni, oslo, web development, frilanser, freelancer, javascript, HTML, CSS3, reactJs, nextJs, norge, norway, web designer, web utvikler, front end developer, front end utvikler" />
       </Head>
       <Header />
-      <Main />
+      <Main data={skills} />
       <Footer />
     </>
   )
 }
+
+
+export async function getStaticProps() {
+
+  let data = []
+
+  try {
+    const response = await fetch("https://ankson.up.railway.app/api/categories?populate=*");
+    const json = await response.json();
+
+    data = json
+
+  } catch (error) {
+    console.log(error);
+  }
+  return {
+    props: {
+      skills: data,
+    },
+    // unstable_revalidate: 1,
+  };
+}
+

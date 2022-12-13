@@ -32,7 +32,6 @@ export function ProjectsProvider({ children }) {
 
       }
 
-
     } catch (error) {
       console.log(error)
       setError("Failed to fetch, Pleae try again")
@@ -58,11 +57,10 @@ export function ProjectsProvider({ children }) {
   return <ProjectsContext.Provider value={{
     data, setData, error,
     loading,
-    fetchData,
+
   }}>
     {children}
   </ProjectsContext.Provider>;
-
 
 }
 export default ProjectsContext;

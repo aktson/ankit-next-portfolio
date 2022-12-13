@@ -5,7 +5,7 @@ function TabsInner({ data }) {
 	return (
 		<>
 			{data &&
-				data.map((result) => {
+				data?.map((result) => {
 					return (
 						// <Flip right cascade >
 						<div key={result.id}>

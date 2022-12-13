@@ -1,28 +1,33 @@
-import React, { useContext, useState } from "react";
-import { baseUrl } from "../../constants/settings";
+import React, { useContext, useEffect, useState } from "react";
 import Loader from "../Loader";
-import useFetch from "../../customHook/useFetch";
 import SkillsTabContent from "./SkillsTabContent";
 import LangContext from "../../context/LangContext";
 
-function Tabs() {
+function Tabs({ data }) {
 	const { isEng } = useContext(LangContext);
 	const [toggleState, setToggleState] = useState("all");
+	const [error, setError] = useState(null);
 
 	const [filteredData, setFilteredData] = useState([]);
+	const loading = false;
 
-	const url = baseUrl + "api/categories?populate=*";
-	const { data, loading, error } = useFetch(url);
+	useEffect(() => {
+		data.data.error && setError(`${data.data.error.status}: Failed to fetch`);
+		return;
+	}, [data.data.error]);
+
+	console.log();
+	const skillsData = data.data;
 
 	function handleAllClick(index) {
 		setToggleState(index);
-		setFilteredData(data);
+		setFilteredData(skillsData.data);
 	}
 
 	function handleFrontendClick(index) {
 		setToggleState(index);
 
-		const filterData = data.filter((result) => {
+		const filterData = skillsData.data.filter((result) => {
 			return result.attributes.category === "frammework";
 		});
 
@@ -31,7 +36,7 @@ function Tabs() {
 	function handleDesignClick(index) {
 		setToggleState(index);
 
-		const filterData = data.filter((result) => {
+		const filterData = skillsData.data.filter((result) => {
 			return result.attributes.category === "design";
 		});
 
@@ -40,15 +45,14 @@ function Tabs() {
 	function handleOtherClick(index) {
 		setToggleState(index);
 
-		const filterData = data.filter((result) => {
+		const filterData = skillsData.data.filter((result) => {
 			return result.attributes.category === "cms";
 		});
 
 		setFilteredData(filterData);
 	}
-
 	if (error) {
-		return <div className="text-center bg-red-600 text-base-200 p-2 w-max mx-auto">{error}</div>;
+		return <p className="text-center bg-red-600 p-4  rounded-xl  mx-auto">{error}</p>;
 	}
 
 	return (
@@ -75,7 +79,7 @@ function Tabs() {
 			) : (
 				<div className="tabs-content">
 					<div className={toggleState === "all" ? " active-tab-content tab-content" : "tab-content"}>
-						<SkillsTabContent data={data} />
+						<SkillsTabContent data={skillsData.data} />
 					</div>
 					<div className={toggleState === 1 ? " active-tab-content tab-content " : "tab-content"}>
 						<SkillsTabContent data={filteredData} />

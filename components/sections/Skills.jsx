@@ -4,7 +4,7 @@ import SkillsTabs from "../uicomponents/tabs/SkillsTabs";
 // import Flip from "react-reveal/Flip";
 import LangContext from "../context/LangContext";
 
-function Skills() {
+function Skills(data) {
 	const { isEng } = useContext(LangContext);
 	return (
 		<section className=" py-16 sm:py-32 px-1 lg:h-screen  bg-base-200" id="skills">
@@ -13,7 +13,7 @@ function Skills() {
 				<h2 className="text-center mx-auto">{isEng ? "SKILLS" : "FERDIGHETER"}</h2>
 				{/* </Flip> */}
 				{/* <Progress /> */}
-				<SkillsTabs />
+				<SkillsTabs data={data} />
 			</div>
 		</section>
 	);

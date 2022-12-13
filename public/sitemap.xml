@@ -5,22 +5,97 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://ankitsoni.dev</loc>
-  <lastmod>2022-06-10T08:13:34+00:00</lastmod>
-</url>
-<url>
-  <loc>https://github.com/aktson</loc>
-  <lastmod>2022-06-10T08:13:34+00:00</lastmod>
-</url>
-<url>
-  <loc>https://www.facebook.com/ankitsoni86</loc>
-  <lastmod>2022-06-10T08:13:34+00:00</lastmod>
-</url>
-<url>
-  <loc>https://www.instagram.com/ankt8soni</loc>
-  <lastmod>2022-06-10T08:13:34+00:00</lastmod>
-</url>
+  <url>
+    <loc>https://ankitsoni.dev</loc>
+    <lastmod>2022-06-10T08:13:34+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/aktson</loc>
+    <lastmod>2022-06-10T08:13:34+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://www.facebook.com/ankitsoni86</loc>
+    <lastmod>2022-06-10T08:13:34+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://www.instagram.com/ankt8soni</loc>
+    <lastmod>2022-06-10T08:13:34+00:00</lastmod>
+  </url>
+  <url>
+  <!-- socialme -->
+  <url>
+    <loc>https://github.com/Noroff-FEU-Assignments/project-exam-2-aktson</loc>
+    <lastmod>2022-12-13T08:13:34+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://socialme.vercel.app/</loc>
+    <lastmod>2022-12-13T08:13:34+00:00</lastmod>
+  </url>
+  <!-- kode oppgave -->
+  <url>
+    <loc>https://github.com/aktson/kodeoppgave-utdannet</loc>
+    <lastmod>2022-12-13T08:13:34+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://kodeoppagaven.netlify.app/</loc>
+    <lastmod>2022-12-13T08:13:34+00:00</lastmod>
+  </url>
+  <!-- noso sports -->
+  <url>
+    <loc>https://github.com/aktson/ankit-soni-semester-project-2</loc>
+    <lastmod>2022-12-13T08:13:34+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://noso.netlify.app/</loc>
+    <lastmod>2022-12-13T08:13:34+00:00</lastmod>
+  </url>
+  <!-- ankson blog -->
+  <url>
+    <loc>https://github.com/Noroff-FEU-Assignments/project-exam-1-aktson</loc>
+    <lastmod>2022-12-13T08:13:34+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://ankson-blog.netlify.app/</loc>
+    <lastmod>2022-12-13T08:13:34+00:00</lastmod>
+  </url>
+  <!-- norheimsund service senter -->
+  <url>
+    <loc>https://github.com/aktson/norheimsundservicesenter</loc>
+    <lastmod>2022-12-13T08:13:34+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://www.norhservice.no/</loc>
+    <lastmod>2022-12-13T08:13:34+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://norhss.netlify.app/</loc>
+    <lastmod>2022-12-13T08:13:34+00:00</lastmod>
+  </url>
+  <!-- decor -->
+  <url>
+    <loc>https://github.com/aktson/design2-ma1</loc>
+    <lastmod>2022-12-13T08:13:34+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://decor-ank.netlify.app/</loc>
+    <lastmod>2022-12-13T08:13:34+00:00</lastmod>
+  </url>
+  <!-- squareeyes -->
+  <url>
+    <loc>https://github.com/aktson/squareeyes</loc>
+    <lastmod>2022-12-13T08:13:34+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://squareeyesnet.netlify.app/</loc>
+    <lastmod>2022-12-13T08:13:34+00:00</lastmod>
+  </url>
+  <!-- community science museum -->
+  <url>
+    <loc>https://github.com/aktson/semester-project-1</loc>
+    <lastmod>2022-12-13T08:13:34+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://communitysm.netlify.app/</loc>
+    <lastmod>2022-12-13T08:13:34+00:00</lastmod>
+  </url>
 </urlset>

@@ -7,13 +7,13 @@ import Hero from "../sections/Hero";
 import ScrollIndicator from "../uicomponents/ScrollIndicator";
 import Skills from "../sections/Skills";
 
-function Main() {
+function Main({ data }) {
 	return (
 		<main className="container max-w-full relative">
 			<ScrollIndicator />
 			<Hero />
 			<About />
-			<Skills />
+			<Skills data={data} />
 			<Projects />
 			<Contact />
 			<Social />
