@@ -6,10 +6,14 @@ import Social from "./Social";
 import Hero from "../sections/Hero";
 import ScrollIndicator from "../uicomponents/ScrollIndicator";
 import Skills from "../sections/Skills";
+import { motion, useScroll } from "framer-motion";
 
 function Main({ data }) {
+	const { scrollYProgress } = useScroll();
+
 	return (
-		<main className="container max-w-full relative">
+		<motion.main className="container max-w-full relativev">
+			<motion.div className="progress-bar" style={{ scaleX: scrollYProgress }}></motion.div>
 			<ScrollIndicator />
 			<Hero />
 			<About />
@@ -17,7 +21,7 @@ function Main({ data }) {
 			<Projects />
 			<Contact />
 			<Social />
-		</main>
+		</motion.main>
 	);
 }
 
