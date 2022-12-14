@@ -4,22 +4,12 @@ import CardsAbout from "../uicomponents/CardsAbout";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 import LangContext from "../context/LangContext";
+import { imageVariant } from "../uicomponents/animationVariants/imageVariants";
+import { parentContainerAbout } from "../uicomponents/animationVariants/parentContainers";
 
 function About() {
 	const ref = useRef(null);
 
-	const imageVariants = {
-		offscreen: {
-			scale: 0,
-		},
-		onscreen: {
-			scale: 1,
-			transition: {
-				type: "anticipate",
-				duration: 0.5,
-			},
-		},
-	};
 	const { isEng } = useContext(LangContext);
 	const paragraph = isEng
 		? "Build state-of-the-art, easy-to-use, user-friendly websites and applications is truly a passion of mine, the goal is to become Full-stack."
@@ -31,11 +21,12 @@ function About() {
 			id="about"
 			initial="offscreen"
 			whileInView="onscreen"
-			viewport={{ once: true, amount: 0.8 }}>
+			viewport={{ once: true, amount: 0.8 }}
+			variants={parentContainerAbout}>
 			<h2>{isEng ? "ABOUT ME" : "OM MEG"}</h2>
 			<div className="grid lg:grid-cols-1 md:grid-col-2 sm:grid-cols-1 gap-8 p-4 ">
 				<div className="p-2  flex flex-col items-center text-center" id="about-img">
-					<motion.figure variants={imageVariants}>
+					<motion.figure variants={imageVariant}>
 						<Image src={ankit} alt="ankit soni" className="mb-8 mask mask-hexagon-2 " width={240} height={240} />
 					</motion.figure>
 					<div className="max-w-xl">

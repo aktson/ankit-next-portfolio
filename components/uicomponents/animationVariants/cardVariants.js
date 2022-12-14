@@ -1,3 +1,14 @@
+export const cardVariantsParent = {
+    offscreen: { opacity: 0 },
+    onscreen: {
+        opacity: 1,
+        transition: {
+            staggerDirection: 1,
+            staggerChildren: 0.2
+        }
+    }
+}
+
 export const cardVariants = {
     offscreen: {
         y: 200,
@@ -10,52 +21,26 @@ export const cardVariants = {
             type: "spring",
             bounce: 0.4,
             duration: 0.9,
+            stiffness: 100,
         },
     },
 };
-export const cardVariants2 = {
+
+
+export const skillsCardVariants = {
     offscreen: {
-        y: 200,
+        scale: 0,
         opacity: 0,
     },
     onscreen: {
-        y: 0,
+        scale: 1,
         opacity: 1,
         transition: {
             type: "spring",
             bounce: 0.4,
-            duration: 0.8,
-            delay: 0.2,
+            duration: 0.9,
+            stiffness: 100,
         },
     },
-};
-export const cardVariants3 = {
-    offscreen: {
-        y: 200,
-        opacity: 0,
-    },
-    onscreen: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            type: "spring",
-            bounce: 0.4,
-            duration: 0.4,
-        },
-    },
-};
-export const cardVariants4 = {
-    offscreen: {
-        y: 200,
-        opacity: 0,
-    },
-    onscreen: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            type: "spring",
-            bounce: 0.4,
-            duration: 0.8,
-        },
-    },
-};
+}
+

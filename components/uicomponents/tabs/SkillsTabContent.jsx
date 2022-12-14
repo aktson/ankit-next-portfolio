@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import { cardVariantsParent, skillsCardVariants } from "../animationVariants/cardVariants.js";
+import { motion } from "framer-motion";
 
 function TabsInner({ data }) {
 	return (
@@ -7,14 +9,20 @@ function TabsInner({ data }) {
 			{data &&
 				data?.map((result) => {
 					return (
-						// <Flip right cascade >
-						<div key={result.id}>
-							<div className="skills tooltip-neutral text-base-100" data-tip={result.attributes.title}>
+						<motion.div
+							key={result.id}
+							initial="offscreen"
+							whileInView="onscreen"
+							viewport={{ amount: 0.8 }}
+							variants={cardVariantsParent}>
+							<motion.div
+								className="skills tooltip-neutral text-base-100"
+								data-tip={result.attributes.title}
+								variants={skillsCardVariants}>
 								<Image src={result.attributes.img.data.attributes.url} alt={result.attributes.title} width={32} height={32} />
 								<p>{result.attributes.title}</p>
-							</div>
-						</div>
-						// </Flip>
+							</motion.div>
+						</motion.div>
 					);
 				})}
 		</>

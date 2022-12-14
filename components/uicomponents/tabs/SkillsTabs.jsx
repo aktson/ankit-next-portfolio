@@ -2,6 +2,8 @@ import React, { useContext, useEffect, useState } from "react";
 import Loader from "../Loader";
 import SkillsTabContent from "./SkillsTabContent";
 import LangContext from "../../context/LangContext";
+import { cardVariants, cardVariantsParent } from "../animationVariants/cardVariants";
+import { motion } from "framer-motion";
 
 function Tabs({ data }) {
 	const { isEng } = useContext(LangContext);

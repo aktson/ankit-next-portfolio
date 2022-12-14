@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { FaDesktop, FaWhmcs, FaMeteor, FaLightbulb } from "react-icons/fa";
 import LangContext from "../context/LangContext";
 import { motion, Variants } from "framer-motion";
-import { cardVariants, cardVariants2, cardVariants3, cardVariants4 } from "./animationVariants/cardVariants";
+import { cardVariants, cardVariantsParent } from "./animationVariants/cardVariants";
 
 function CardsAbout() {
 	const { isEng } = useContext(LangContext);
@@ -12,13 +12,14 @@ function CardsAbout() {
 			id="cards"
 			initial="offscreen"
 			whileInView="onscreen"
-			viewport={{ amount: 0.8 }}>
+			viewport={{ amount: 0.8 }}
+			variants={cardVariantsParent}>
 			<motion.div className="card card-compact bg-warning shadow-xl p-6" variants={cardVariants}>
 				<FaDesktop size={60} className="about-icons" />
 				<h3>Responsive</h3>
 				<p>{isEng ? "Layouts that works on all the devices" : "Layouter som fungerer på alle enheter"}</p>
 			</motion.div>
-			<motion.div className="card card-compact bg-warning shadow-xl p-6" variants={cardVariants2}>
+			<motion.div className="card card-compact bg-warning shadow-xl p-6" variants={cardVariants}>
 				<FaWhmcs size={60} className="about-icons" />
 				<h3>{isEng ? "Dynamic" : "Dynamisk"}</h3>
 				<p>
@@ -27,14 +28,14 @@ function CardsAbout() {
 						: "Nettsteder trenger ikke å være statiske. Jeg elsker å få sider til å bli levende.."}
 				</p>
 			</motion.div>
-			<motion.div className="card card-compact  bg-warning shadow-xl p-6" variants={cardVariants3}>
+			<motion.div className="card card-compact  bg-warning shadow-xl p-6" variants={cardVariants}>
 				<FaLightbulb size={60} className="about-icons" />
 
 				<h3> {isEng ? "Intuitive" : "Intuitivt"}</h3>
 				<p>{isEng ? "Strong preference for user-friendly " : "Sterk preferanse for brukervennlig "}UX/UI</p>
 			</motion.div>
 
-			<motion.div className="card card-compact  bg-warning shadow-xl p-6" variants={cardVariants4}>
+			<motion.div className="card card-compact  bg-warning shadow-xl p-6" variants={cardVariants}>
 				<FaMeteor size={60} className="about-icons" />
 				<h3>{isEng ? "Fast" : "Raskt"}</h3>
 				<p>
