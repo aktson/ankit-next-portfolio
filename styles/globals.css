@@ -165,7 +165,7 @@ h1 {
 		@apply text-base-100 rounded-none shadow-2xl  hover:text-neutral;
 	}
 	.about-icons {
-		@apply mx-auto mb-4 text-accent;
+		@apply mx-auto mb-4 text-secondary;
 	}
 	.para-progress {
 		@apply flex items-center shadow-2xl gap-3 p-5 bg-base-100;

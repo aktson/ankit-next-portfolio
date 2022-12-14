@@ -48,7 +48,7 @@ export default function Home({ skills }) {
 
 export async function getStaticProps() {
 
-  let data = []
+  let data = [];
 
   try {
     const response = await fetch("https://ankson.up.railway.app/api/categories?populate=*");
@@ -66,4 +66,5 @@ export async function getStaticProps() {
     // unstable_revalidate: 1,
   };
 }
+
 
