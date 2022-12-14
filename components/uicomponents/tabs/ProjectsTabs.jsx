@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import Loader from "../Loader";
-// import Fade from "react-reveal/Fade";
+import { motion } from "framer-motion";
 import ProjectsTabContent from "./ProjectsTabContent";
 import ProjectsContext from "../../context/ProjectsContext";
 import LangContext from "../../context/LangContext";
@@ -72,9 +72,9 @@ function ProjectsTabs() {
 				<Loader />
 			) : (
 				<>
-					<div className={toggleState === "all" ? " active-tab-content tab-content" : "tab-content"}>
+					<motion.div className={toggleState === "all" ? " active-tab-content tab-content" : "tab-content"}>
 						<ProjectsTabContent data={data} />
-					</div>
+					</motion.div>
 					<div className={toggleState === 1 ? " active-tab-content tab-content " : "tab-content"}>
 						<ProjectsTabContent data={filteredData} />
 					</div>

@@ -8,16 +8,17 @@ module.exports = {
     themes: [
       {
         dark: {
-          "primary": "#FFB86B",
-          "accent": "#FF7AC6",
-          "secondary": "#BF95F9",
-          "neutral": "#ffffff",
-          "base-100": "#272935",
-          "base-200": "#2F3240",
-          "info": "#66ADF0",
-          "success": "#37E1BF",
-          "warning": "#414558",
-          "error": "#E64B3D",
+          "primary": "#3ABFF8",
+          "accent": "#828DF8",
+          "secondary": "#F471B5",
+          "neutral": "#b3c5ef",
+          "base-100": "#0F1729",
+          "base-200": "#141E36",
+          "base-300": "#2B4275",
+          "info": "#0CA6E9",
+          "success": "#2BD4BD",
+          "warning": "#F4C152",
+          "error": "#FB6F84",
         },
         light: {
           "primary": "#570df8",

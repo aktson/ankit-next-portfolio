@@ -36,10 +36,10 @@ function Slider({ data, length }) {
 		<>
 			{
 				<div className=" flex  justify-center items-center mx-auto overflow-clip  relative w-full z-50">
-					<button className="btn btn-accent  absolute rounded-full left-2 shadow-xl z-10" onClick={slideLeft}>
+					<button className="btn btn-secondary  absolute rounded-full left-2 shadow-xl z-10" onClick={slideLeft}>
 						<FaAngleLeft />
 					</button>
-					<button className="btn btn-accent absolute rounded-full right-2 shadow-xl z-10" onClick={slideRight}>
+					<button className="btn btn-secondary absolute rounded-full right-2 shadow-xl z-10" onClick={slideRight}>
 						<FaAngleRight />
 					</button>
 					<div className="z-50  absolute bottom-2 flex gap-2">{dots}</div>

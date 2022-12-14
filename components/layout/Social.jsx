@@ -21,7 +21,7 @@ function Social() {
 					<Email />
 				</li>
 			</ul>
-			<div className="h-16 w-0.5 bg-accent my-1 mx-auto"></div>
+			<div className="h-16 w-0.5 bg-primary my-1 mx-auto"></div>
 		</div>
 	);
 }

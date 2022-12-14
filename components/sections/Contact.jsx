@@ -1,9 +1,6 @@
 import React, { useRef, useEffect, useReducer, useContext } from "react";
 import emailjs from "@emailjs/browser";
 import { FaCheck } from "react-icons/fa";
-// import Bounce from "react-reveal/Bounce";
-// import HeadShake from "react-reveal/HeadShake";
-// import Tada from "react-reveal/Tada";
 import LangContext from "../context/LangContext";
 
 const initialState = {
@@ -118,15 +115,15 @@ function Contact() {
 	};
 
 	return (
-		<section className="flex flex-col items-center gap-4  py-16 sm:py-32 px-1 lg:h-screen  justify-center bg-base-200" id="contact">
+		<section className="flex flex-col items-center gap-4  py-16 sm:py-32 px-1 lg:h-screen  justify-center bg-base-100" id="contact">
 			{/* <Bounce top cascade> */}
 			<h2>{isEng ? "CONTACT" : "KONTAKT"}</h2>
 			{/* </Bounce>
 			<Bounce bottom cascade> */}
 			<div className="form-container">
 				<div className="form-aside ">
-					<p className="text-2xl mb-2 text-center text-base-100">{isEng ? "Please leave a message," : "Legg igjen melding,"}</p>
-					<p className="text-4xl text-center  text-base-100">
+					<p className="text-3xl mb-2 text-center text-base-100 ">{isEng ? "Please leave a message," : "Legg igjen melding,"}</p>
+					<p className="text-5xl text-center  text-base-100 ">
 						{isEng ? "Let us build something amazing together..." : "La oss bygge noe fantastisk sammen....."}
 					</p>
 				</div>

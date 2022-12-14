@@ -4,9 +4,12 @@ import { animateScroll as scroll } from "react-scroll";
 
 function ToTopButton() {
 	return (
-		<div id="to-top-btn" onClick={() => scroll.scrollToTop()}>
+		<button
+			id="to-top-btn"
+			onClick={() => scroll.scrollToTop()}
+			className="absolute bottom-36 sm:bottom-20 right-12  btn btn-primary  w-12 text-lg rounded-full text-base-100  p-3 ">
 			<FaAngleUp />
-		</div>
+		</button>
 	);
 }
 
