@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { FaDesktop, FaWhmcs, FaMeteor, FaLightbulb } from "react-icons/fa";
 import LangContext from "../context/LangContext";
 import { motion } from "framer-motion";
-import { animationParent, cardVariants, cardVariantsParent } from "./animationVariants/animationVariants";
+import { cardVariants } from "./animationVariants/animationVariants";
 
 function CardsAbout() {
 	const { isEng } = useContext(LangContext);
@@ -12,8 +12,7 @@ function CardsAbout() {
 			className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  text-center container justify-center gap-2 p-8  mx-auto"
 			initial="offscreen"
 			whileInView="onscreen"
-			viewport={{ amount: 0.8 }}
-			variants={cardVariantsParent}>
+			viewport={{ amount: 0.8 }}>
 			<motion.div className="card card-compact bg-base-200 shadow-xl p-6" variants={cardVariants}>
 				<FaDesktop size={60} className="about-icons" />
 				<h3>Responsive</h3>

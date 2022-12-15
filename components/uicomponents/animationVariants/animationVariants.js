@@ -1,14 +1,13 @@
 export const cardVariantsParent = {
-    offscreen: {
-        y: 0,
-    },
+    offscreen: { opacity: 0 },
     onscreen: {
-        y: 0,
+        opacity: 1,
         transition: {
             staggerDirection: 1,
-            staggerChildren: 0.1
+            staggerChildren: 0.4
         }
-    },
+
+    }
 }
 
 export const cardVariants = {
