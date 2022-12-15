@@ -1,32 +1,30 @@
-export const animationParent = {
-    offscreen: { opacity: 0 },
+export const cardVariantsParent = {
+    offscreen: {
+        y: 0,
+    },
     onscreen: {
-        opacity: 1,
+        y: 0,
         transition: {
             staggerDirection: 1,
-            staggerChildren: 0.2
+            staggerChildren: 0.1
         }
-
-    }
+    },
 }
 
 export const cardVariants = {
     offscreen: {
-        y: 200,
-        opacity: 0,
+        y: 20,
     },
     onscreen: {
         y: 0,
-        opacity: 1,
+        rotate: -10,
         transition: {
             type: "spring",
             bounce: 0.4,
-            duration: 0.9,
-            stiffness: 100,
+            duration: 0.8,
         },
     },
 };
-
 
 export const skillsCardVariants = {
     offscreen: {
@@ -52,7 +50,7 @@ export const imageVariant = {
     },
     onscreen: {
         scale: 1,
-        translateX: 0,
+        // translateX: 0,
         transition: {
             type: "spring",
             duration: 0.5,

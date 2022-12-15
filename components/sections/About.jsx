@@ -22,12 +22,7 @@ function About() {
 		: "Bygge state-of-the-art, enkel å bruke, brukervennlige nettsider og applikasjoner er virkelig en lidenskap for meg, målet er å bli Full-stack.";
 
 	return (
-		<motion.section
-			className=" flex flex-col justify-center items-center py-16 sm:py-32 px-1 lg:h-screen origin-left"
-			id="about"
-			initial="offscreen"
-			whileInView="onscreen"
-			viewport={{ amount: 0.8 }}>
+		<section className=" flex flex-col justify-center items-center py-16 sm:py-32 px-1 lg:h-screen origin-left" id="about">
 			<h2>{isEng ? "ABOUT ME" : "OM MEG"}</h2>
 			<div className="grid lg:grid-cols-1 md:grid-col-2 sm:grid-cols-1 gap-8 p-4 ">
 				<div className="p-2  flex flex-col items-center text-center" id="about-img">
@@ -40,7 +35,7 @@ function About() {
 				</div>
 				<CardsAbout />
 			</div>
-		</motion.section>
+		</section>
 	);
 }
 
