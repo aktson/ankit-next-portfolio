@@ -3,7 +3,7 @@
 ![image](https://github.com/aktson/ankit-react-portfolio/blob/master/src/assets/portfolio-1.jpg)
 
 ## Description
-This is my personal portfolio website created with ReactJS and data are fetched from Strapi hosted on Railway.
+This is my personal portfolio website created with NextJs and data are fetched from Strapi hosted on Railway.
 
 
 ### Built With
