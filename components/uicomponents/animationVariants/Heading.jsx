@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function Heading({ heading }) {
 	const lineVariant2 = {
 		offscreen: {
-			translateX: -150,
+			translateX: 150,
 			opacity: 0,
 		},
 		onscreen: {
@@ -12,6 +12,7 @@ function Heading({ heading }) {
 			opacity: 1,
 			transition: {
 				type: "spring",
+				delay: 0.2,
 				bounce: 0.4,
 				duration: 0.9,
 				stiffness: 100,
@@ -37,12 +38,7 @@ function Heading({ heading }) {
 
 	return (
 		<div className="relative">
-			<motion.h2
-				initial="offscreen"
-				whileInView="onscreen"
-				viewport={{ amount: 0.8, once: false }}
-				variants={lineVariant2}
-				className="text-center ">
+			<motion.h2 initial="offscreen" whileInView="onscreen" viewport={{ amount: 0.8, once: false }} variants={lineVariant2}>
 				{heading}
 			</motion.h2>
 			<motion.span

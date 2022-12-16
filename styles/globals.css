@@ -44,13 +44,13 @@
 }
 body {
 	font-family: var(--body-fonts);
+	overflow-x: hidden;
 }
 #__next {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
 	position: relative;
-	overflow-y: hidden;
 }
 .line-break {
 	white-space: pre-wrap;
