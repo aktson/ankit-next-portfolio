@@ -73,18 +73,19 @@ export const imageVariant = {
     },
 };
 
-export const AnimatedCharacters = (props) => {
-    // Framer Motion variant object, for controlling animation
-    const item = {
-        offscreen: {
-            y: "200%",
-            color: "#0055FF",
-            transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.85 }
+const headingVariant = {
+    offscreen: {
+        translateX: -100,
+        opacity: 0,
+    },
+    onscreen: {
+        translateX: 0,
+        opacity: 1,
+        transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 0.9,
+            stiffness: 100,
         },
-        onscreen: {
-            y: 0,
-            color: "#FF0088",
-            transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.75 }
-        }
-    };
-}
+    },
+};

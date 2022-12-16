@@ -35,3 +35,25 @@ export const wavyTextChild = {
         },
     },
 };
+
+export const wavyText = {
+    offscreen: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            type: "spring",
+            damping: 12,
+            stiffness: 200,
+        },
+    },
+    hidden: {
+        onscreen: 0,
+        y: 20,
+
+        transition: {
+            type: "spring",
+            damping: 12,
+            stiffness: 200,
+        },
+    },
+};

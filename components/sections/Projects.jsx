@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import ProjectsTabs from "../uicomponents/tabs/ProjectsTabs";
 import LangContext from "../context/LangContext";
-import { motion } from "framer-motion";
-import { cardVariantsParent } from "../uicomponents/animationVariants/animationVariants";
+import Heading from "../uicomponents/animationVariants/Heading";
 
 function Projects() {
 	const { isEng } = useContext(LangContext);
@@ -18,8 +17,7 @@ function Projects() {
 	return (
 		<section className=" py-16 sm:py-32 px-1" id="projects">
 			<div className="container flex flex-col justify-center mx-auto items-center">
-				<h2>{isEng ? "PROJECTS" : "PROSJEKTER"}</h2>
-
+				<Heading heading={isEng ? "PROJECTS" : "PROSJEKTER"} />
 				<p className="max-w-3xl text-center mb-8">
 					{para1}
 					<a href="https://github.com/aktson?tab=repositories" target="_blank" rel="noreferrer" className="text-accent ml-1">

@@ -4,17 +4,11 @@ import CardsAbout from "../uicomponents/CardsAbout";
 import Image from "next/image";
 import LangContext from "../context/LangContext";
 import { motion } from "framer-motion";
+import Heading from "../uicomponents/animationVariants/Heading";
+import { cardVariantsParent } from "../uicomponents/animationVariants/animationVariants";
 
 function About() {
 	const ref = useRef(null);
-
-	const parentContainerAbout = {
-		offscreen: { opacity: 0 },
-		onscreen: {
-			opacity: 1,
-			transition: {},
-		},
-	};
 
 	const { isEng } = useContext(LangContext);
 	const paragraph = isEng
@@ -23,7 +17,7 @@ function About() {
 
 	return (
 		<section className=" flex flex-col justify-center items-center py-16 sm:py-32 px-1 lg:h-screen origin-left" id="about">
-			<h2>{isEng ? "ABOUT ME" : "OM MEG"}</h2>
+			<Heading heading={isEng ? "ABOUT ME" : "OM MEG"} />
 			<div className="grid lg:grid-cols-1 md:grid-col-2 sm:grid-cols-1 gap-8 p-4 ">
 				<div className="p-2  flex flex-col items-center text-center" id="about-img">
 					<figure>

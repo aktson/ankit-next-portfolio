@@ -50,6 +50,7 @@ body {
 	min-height: 100vh;
 	flex-direction: column;
 	position: relative;
+	overflow-y: hidden;
 }
 .line-break {
 	white-space: pre-wrap;
@@ -136,10 +137,6 @@ h1 {
 	}
 	h2 {
 		@apply text-4xl mb-14 relative text-primary;
-	}
-	h2::after {
-		content: "";
-		@apply bg-primary absolute w-1/2 left-1/4 p-1 -bottom-4;
 	}
 	h3 {
 		@apply text-2xl mb-3  text-neutral;
@@ -266,6 +263,16 @@ h1 {
 			top: 150px;
 		}
 	}
+	@media (max-width: 400px) {
+		.indicator-icons {
+			font-size: 0.5em;
+			opacity: 0.8;
+			display: none;
+		}
+		#indicatior-container {
+			top: 150px;
+		}
+	}
 }
 
 /* styled scrollbar */
@@ -325,7 +332,7 @@ h1 {
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 3px;
+	height: 5px;
 	background: var(--primary);
 	transform-origin: 0%;
 	z-index: 110;

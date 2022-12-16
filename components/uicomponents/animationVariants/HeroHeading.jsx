@@ -7,7 +7,7 @@ function HeroHeading({ heading, font }) {
 		<div style={{ display: "flex", overflow: "hidden" }}>
 			{heading.split("").map((letter, index) => {
 				return (
-					<motion.span key={index} variants={wavyTextChild} className={`t ${font} `}>
+					<motion.span key={index} variants={wavyTextChild} className={` ${font} `}>
 						{letter === " " ? "\u00A0" : letter}
 					</motion.span>
 				);
