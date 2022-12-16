@@ -29,11 +29,11 @@ export default function Home({ skills }) {
         <meta name="url" content="https://ankitsoni.dev" />
         <meta name="image" content="../public/images/ankitLightGray.jpg" />
         <meta name="description"
-          content="Looking for professional freelance front-end developer or web designe? Ankit Soni is creative professional Front End Developer and web designer skilled in react, next, typescript and vanilla javascript. Kreative profesjonell  Front End Utvikler & web designer | " />
-        <meta name="keywords" content="ankit, soni,portfolio, Ankit Soni, oslo, web development, frilanser, freelancer, javascript, HTML, CSS3, reactJs, nextJs, norge, norway, web designer, web utvikler, front end developer, front end utvikler" />
+          content="Looking for professional freelance front-end developer or web designer? Ankit Soni is creative professional Front End Developer and web designer skilled in react, next, typescript and vanilla javascript based in Norway. Kreative profesjonell  Front End Utvikler & web designer  " />
+        <meta name="keywords" content="ankit, soni, portfolio, Ankit Soni, oslo, web development, frilanser, freelancer, javascript, HTML, CSS3, reactJs, nextJs, norge, norway, web designer, web utvikler, front end developer, front end utvikler" />
         <meta property="og:title" content="Ankit Soni | Front End Developer" />
         <meta property="og:description"
-          content="Looking for professional freelance front-end developer or web designe? Ankit Soni is creative professional Front End Developer and web designer skilled in react, next, typescript and vanilla javascript. Kreative profesjonell  Front End Utvikler & web designer | " />
+          content="Looking for professional freelance front-end developer or web designe?r? Ankit Soni is creative professional Front End Developer and web designer skilled in react, next, typescript and vanilla javascript. Kreative profesjonell  Front End Utvikler & web designer  " />
         <meta property="og:image" content="../public/images/ankitLightGray.jpg" />
         <meta property="og:url" content="https://ankitsoni.dev" />
         <meta property="og:type" content="website" />
@@ -52,6 +52,7 @@ export async function getStaticProps() {
 
   try {
     const response = await fetch("https://ankson.up.railway.app/api/categories?populate=*");
+
     const json = await response.json();
 
     data = json

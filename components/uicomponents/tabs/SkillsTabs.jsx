@@ -16,7 +16,6 @@ function Tabs({ data }) {
 		return;
 	}, [data.data.error]);
 
-	console.log();
 	const skillsData = data.data;
 
 	function handleAllClick(index) {

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import ProjectsTabContent from "./ProjectsTabContent";
 import ProjectsContext from "../../context/ProjectsContext";
 import LangContext from "../../context/LangContext";
+import { cardVariants, cardVariantsParent } from "../animationVariants/animationVariants";
 
 function ProjectsTabs() {
 	const { isEng } = useContext(LangContext);
@@ -52,7 +53,6 @@ function ProjectsTabs() {
 	return (
 		<>
 			<div className="tabs-header-container">
-				{/* <Fade> */}
 				<button className={toggleState === "all" ? "tab-header active-tab" : "tab-header  "} onClick={() => handleAllClick("all")}>
 					{isEng ? "All" : "All"}
 				</button>
@@ -65,15 +65,19 @@ function ProjectsTabs() {
 				<button className={toggleState === 3 ? " tab-header active-tab" : "tab-header "} onClick={() => handleNextClick(3)}>
 					NextJs
 				</button>
-				{/* </Fade> */}
 			</div>
 
 			{loading ? (
 				<Loader />
 			) : (
 				<>
-					<motion.div className={toggleState === "all" ? " active-tab-content tab-content" : "tab-content"}>
-						<ProjectsTabContent data={data} />
+					<motion.div
+						className={toggleState === "all" ? " active-tab-content tab-content" : "tab-content"}
+						initial="offscreen"
+						whileInView="onscreen"
+						viewport={{ amount: 0.8 }}
+						variants={cardVariantsParent}>
+						<ProjectsTabContent data={data} variants={cardVariants} />
 					</motion.div>
 					<div className={toggleState === 1 ? " active-tab-content tab-content " : "tab-content"}>
 						<ProjectsTabContent data={filteredData} />

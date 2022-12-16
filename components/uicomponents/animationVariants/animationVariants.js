@@ -1,7 +1,7 @@
 export const cardVariantsParent = {
-    offscreen: { opacity: 0 },
+    offscreen: { y: 5 },
     onscreen: {
-        opacity: 1,
+        y: 0,
         transition: {
             staggerDirection: 1,
             staggerChildren: 0.4
@@ -41,6 +41,21 @@ export const skillsCardVariants = {
         },
     },
 }
+export const projectCardVariants = {
+    offscreen: {
+        scale: 0.9,
+    },
+    onscreen: {
+        scale: 1,
+
+        transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 0.9,
+            stiffness: 100,
+        },
+    },
+}
 
 export const imageVariant = {
     offscreen: {
@@ -49,7 +64,6 @@ export const imageVariant = {
     },
     onscreen: {
         scale: 1,
-        // translateX: 0,
         transition: {
             type: "spring",
             duration: 0.5,
@@ -58,3 +72,19 @@ export const imageVariant = {
         },
     },
 };
+
+export const AnimatedCharacters = (props) => {
+    // Framer Motion variant object, for controlling animation
+    const item = {
+        offscreen: {
+            y: "200%",
+            color: "#0055FF",
+            transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.85 }
+        },
+        onscreen: {
+            y: 0,
+            color: "#FF0088",
+            transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.75 }
+        }
+    };
+}

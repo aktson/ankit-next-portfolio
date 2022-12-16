@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import ProjectsTabs from "../uicomponents/tabs/ProjectsTabs";
 import LangContext from "../context/LangContext";
+import { motion } from "framer-motion";
+import { cardVariantsParent } from "../uicomponents/animationVariants/animationVariants";
 
 function Projects() {
 	const { isEng } = useContext(LangContext);
