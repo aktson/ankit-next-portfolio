@@ -17,7 +17,7 @@ export const wavyTextParent = {
 export const wavyTextChild = {
     visible: {
         opacity: 1,
-        y: 0,
+        scale: 1,
         transition: {
             type: "spring",
             damping: 12,
@@ -26,7 +26,7 @@ export const wavyTextChild = {
     },
     hidden: {
         opacity: 0,
-        y: 20,
+        scale: 0,
 
         transition: {
             type: "spring",

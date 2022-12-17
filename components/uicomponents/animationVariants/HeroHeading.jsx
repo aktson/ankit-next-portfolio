@@ -4,7 +4,7 @@ import { wavyTextChild } from "./WavyText";
 
 function HeroHeading({ heading, font }) {
 	return (
-		<div style={{ display: "flex", overflow: "hidden" }}>
+		<div style={{ display: "flex", overflow: "hidden", flexWrap: "wrap" }}>
 			{heading.split("").map((letter, index) => {
 				return (
 					<motion.span key={index} variants={wavyTextChild} className={` ${font} `}>
