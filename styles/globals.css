@@ -172,7 +172,7 @@ h1 {
 	}
 
 	.social-icons {
-		@apply inline-block w-4 h-4 stroke-current text-base-100 sm:text-neutral mx-auto hover:text-secondary hover:animate-bounce;
+		@apply inline-block w-4 h-4 stroke-current text-accent sm:text-neutral mx-auto hover:text-secondary hover:animate-bounce;
 	}
 
 	/* modal */

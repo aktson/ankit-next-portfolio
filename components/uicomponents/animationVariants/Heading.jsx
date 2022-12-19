@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 function Heading({ heading }) {
 	const lineVariant2 = {
 		offscreen: {
-			translateY: -50,
+			translateX: 100,
 			opacity: 0,
 		},
 		onscreen: {
-			translateY: 0,
+			translateX: 0,
 			opacity: 1,
 			transition: {
 				type: "spring",
@@ -21,11 +21,11 @@ function Heading({ heading }) {
 	};
 	const lineVariant = {
 		offscreen: {
-			translateY: 50,
+			translateX: -100,
 			opacity: 0,
 		},
 		onscreen: {
-			translateY: 0,
+			translateX: 0,
 			opacity: 1,
 			transition: {
 				type: "spring",
