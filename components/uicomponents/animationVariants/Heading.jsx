@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function Heading({ heading }) {
 	const lineVariant2 = {
 		offscreen: {
-			translateY: 60,
+			translateY: -60,
 			opacity: 0,
 		},
 		onscreen: {
@@ -21,7 +21,7 @@ function Heading({ heading }) {
 	};
 	const lineVariant = {
 		offscreen: {
-			translateY: -600,
+			translateY: 60,
 			opacity: 0,
 		},
 		onscreen: {
@@ -30,7 +30,7 @@ function Heading({ heading }) {
 			transition: {
 				type: "spring",
 				bounce: 0.4,
-				duration: 0.9,
+				duration: 0.6,
 				stiffness: 100,
 			},
 		},
