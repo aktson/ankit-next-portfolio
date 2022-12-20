@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import Head from 'next/head'
 import Footer from '../components/layout/Footer'
 import Main from '../components/layout/Main'
@@ -38,6 +39,21 @@ export default function Home({ skills }) {
         <meta property="og:url" content="https://ankitsoni.dev" />
         <meta property="og:type" content="website" />
       </Head>
+      {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-JHKR6CZMT0"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-JHKR6CZMT0');
+        `}
+      </Script>
+
       <Header />
       <Main data={skills} />
       <Footer />
