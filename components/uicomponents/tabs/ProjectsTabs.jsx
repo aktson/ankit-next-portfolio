@@ -36,15 +36,15 @@ function ProjectsTabs() {
 
 		setFilteredData(filterData);
 	}
-	function handleNextClick(index) {
-		setToggleState(index);
+	// function handleNextClick(index) {
+	// 	setToggleState(index);
 
-		const filterData = data.filter((result) => {
-			return result.attributes.category === "next";
-		});
+	// 	const filterData = data.filter((result) => {
+	// 		return result.attributes.category === "next";
+	// 	});
 
-		setFilteredData(filterData);
-	}
+	// 	setFilteredData(filterData);
+	// }
 
 	if (error) {
 		return <div className="text-center bg-red-600 text-base-200 p-2 w-max mx-auto">{error}</div>;
@@ -60,11 +60,11 @@ function ProjectsTabs() {
 					Javascript
 				</button>
 				<button className={toggleState === 2 ? " tab-header  active-tab" : "tab-header "} onClick={() => handleReactClick(2)}>
-					ReactJs
+					React / Next
 				</button>
-				<button className={toggleState === 3 ? " tab-header active-tab" : "tab-header "} onClick={() => handleNextClick(3)}>
+				{/* <button className={toggleState === 3 ? " tab-header active-tab" : "tab-header "} onClick={() => handleNextClick(3)}>
 					NextJs
-				</button>
+				</button> */}
 			</div>
 
 			{loading ? (
