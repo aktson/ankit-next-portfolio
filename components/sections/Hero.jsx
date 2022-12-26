@@ -13,8 +13,8 @@ function Hero() {
 
 	const heading1 = isEng ? "Hi! I'M " : "Hei! Jeg er";
 	const heading2 = "Ankit Soni";
-	const heading3 = isEng ? "Front-end Developer & " : "Front-end Utvikler & ";
-	const heading4 = "Web Designer";
+	const heading3 = isEng ? "Front-end Developer" : "Front-end Utvikler";
+	// const heading4 = "Web Designer";
 
 	return (
 		<section id="hero" className={` flex flex-col justify-center h-screen relative`}>
@@ -31,7 +31,7 @@ function Hero() {
 						<HeroHeading heading={heading2} font="text-primary  text-4xl sm:text-5xl my-2 " />
 						<div className="flex flex-wrap justify-center">
 							<HeroHeading heading={heading3} font="text-3xl " />
-							<HeroHeading heading={heading4} font="text-3xl " />
+							{/* <HeroHeading heading={heading4} font="text-3xl " /> */}
 						</div>
 					</motion.h1>
 					<Link className="btn btn-primary btn-md sm:btn-wide rounded-xl " to="about" smooth={true} duration={500}>
