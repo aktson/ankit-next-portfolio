@@ -13,7 +13,7 @@ function Main({ data }) {
 
 	return (
 		<motion.main className="container max-w-full relativev">
-			<motion.div className="progress-bar" style={{ scaleX: scrollYProgress }}></motion.div>
+			{/* <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }}></motion.div> */}
 			<ScrollIndicator />
 			<Hero />
 			<About />
