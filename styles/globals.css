@@ -215,6 +215,9 @@ h1 {
 	.tabs-header-container {
 		@apply my-12 mx-auto text-center grid grid-cols-2 justify-items-center gap-2  p-2 sm:flex sm:justify-center  sm:items-center w-full max-w-xl rounded-full shadow-lg bg-base-200;
 	}
+	.tabs-header-projects {
+		@apply my-12 mx-auto text-center gap-2  p-2 flex flex-col sm:flex-row justify-center  items-center w-full max-w-lg rounded-full shadow-xl bg-base-200;
+	}
 	.tab-header {
 		@apply text-lg  cursor-pointer transition-all duration-500 p-3 md:p-6 rounded-full flex items-center;
 	}

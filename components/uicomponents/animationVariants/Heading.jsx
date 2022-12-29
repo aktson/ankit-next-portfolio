@@ -21,7 +21,7 @@ function Heading({ heading }) {
 	};
 	const lineVariant = {
 		offscreen: {
-			translateY: 70,
+			translateY: 40,
 			opacity: 0,
 		},
 		onscreen: {

@@ -52,7 +52,7 @@ function ProjectsTabs() {
 
 	return (
 		<>
-			<div className="tabs-header-container">
+			<div className="tabs-header-projects">
 				<button className={toggleState === "all" ? "tab-header active-tab" : "tab-header  "} onClick={() => handleAllClick("all")}>
 					{isEng ? "All" : "All"}
 				</button>
