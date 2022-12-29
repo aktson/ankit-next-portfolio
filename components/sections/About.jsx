@@ -16,7 +16,7 @@ function About() {
 		: "Bygge state-of-the-art, enkel å bruke, brukervennlige nettsider og applikasjoner er virkelig en lidenskap for meg, målet er å bli Full-stack.";
 
 	return (
-		<section className=" flex flex-col justify-center items-center py-16 sm:py-32 px-1 lg:h-screen origin-left" id="about">
+		<section className=" flex flex-col justify-center items-center py-16 sm:py-32 px-1 lg:min-h-screen origin-left" id="about">
 			<Heading heading={isEng ? "ABOUT ME" : "OM MEG"} />
 			<div className="grid lg:grid-cols-1 md:grid-col-2 sm:grid-cols-1 gap-8 p-4 ">
 				<div className="p-2  flex flex-col items-center text-center" id="about-img">

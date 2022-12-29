@@ -42,8 +42,8 @@ function Header() {
 
 	return (
 		<header
-			className={` absolute lg:fixed top-0 left-0 right-0 flex items-center justify-center z-40 sm:py-4  shadow-xl sm:shadow-none ${showNavBar} transition-all duration-300 `}>
-			<div className="container flex justify-around md:justify-between gap-2 p-4 py-4 items-center flex-col sm:flex-row sm:bg-base-200 sm:shadow-xl rounded-full ">
+			className={` absolute lg:fixed top-0 left-0 right-0 flex items-center justify-center z-40 sm:p-4 shadow-xl sm:shadow-none ${showNavBar} transition-all duration-300 `}>
+			<div className="container flex justify-around md:justify-between gap-2 p-2 items-center flex-col sm:flex-row sm:bg-base-200 sm:shadow-xl rounded-full ">
 				{/* logo */}
 				<figure className=" xl:w-96 p-2 ml-3" onClick={() => scroll.scrollToTop()}>
 					<Image src={isChecked ? darkLogo : lightLogo} alt="ankit soni logo" width={55} height={55} />

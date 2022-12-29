@@ -17,7 +17,7 @@ function Hero() {
 	// const heading4 = "Web Designer";
 
 	return (
-		<section id="hero" className={` flex flex-col justify-center h-screen relative`}>
+		<section id="hero" className={` flex flex-col justify-center min-h-screen relative`}>
 			<Image src={isChecked ? bgDark : bgLight} alt="background vector wavees" fill object-fit="cover" />
 			{/* <Header /> */}
 			<div className="container  mx-auto px-1 relative flex items-center justify-center text-center">

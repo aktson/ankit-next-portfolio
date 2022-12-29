@@ -116,7 +116,7 @@ function Contact() {
 	};
 
 	return (
-		<section className="flex flex-col items-center gap-4  py-16 sm:py-32 px-1 lg:h-screen  justify-center bg-base-100" id="contact">
+		<section className="flex flex-col items-center gap-4  py-16 sm:py-32 px-1 lg:min-h-screen  justify-center bg-base-100" id="contact">
 			<Heading heading={isEng ? "CONTACT" : "KONTAKT"} />
 			<div className="form-container">
 				<div className="form-aside ">
