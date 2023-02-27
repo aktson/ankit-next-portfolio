@@ -14,7 +14,7 @@ function Footer() {
 				<Instagram />
 			</div>
 			<div>
-				<p className="text-lg text-white">Copyright &copy; 2022 - SONI | org nr. 930 862 665</p>
+				<p className="text-lg text-white">Copyright &copy; 2022 - SONI | Org nr. 930 862 665</p>
 			</div>
 			<ToTopButton />
 		</footer>
