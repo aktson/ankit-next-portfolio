@@ -16,33 +16,33 @@ function Header() {
 
 	const [showNavBar, setShowNavBar] = useState("");
 
-	const handleNavigation = useCallback(
-		(e) => {
-			if (typeof window !== "undefined") {
-				setScrollY(window.scrollY);
+	// const handleNavigation = useCallback(
+	// 	(e) => {
+	// 		if (typeof window !== "undefined") {
+	// 			setScrollY(window.scrollY);
 
-				if (scrollY > window.scrollY) {
-					setShowNavBar("");
-				} else if (scrollY < window.scrollY) {
-					setShowNavBar("-translate-y-32");
-				}
-				setScrollY(window.scrollY);
-			}
-		},
-		[scrollY]
-	);
+	// 			if (scrollY > window.scrollY) {
+	// 				setShowNavBar("");
+	// 			} else if (scrollY < window.scrollY) {
+	// 				setShowNavBar("-translate-y-32");
+	// 			}
+	// 			setScrollY(window.scrollY);
+	// 		}
+	// 	},
+	// 	[scrollY]
+	// );
 
-	useEffect(() => {
-		window.addEventListener("scroll", handleNavigation);
+	// useEffect(() => {
+	// 	window.addEventListener("scroll", handleNavigation);
 
-		return () => {
-			window.removeEventListener("scroll", handleNavigation);
-		};
-	}, [handleNavigation]);
+	// 	return () => {
+	// 		window.removeEventListener("scroll", handleNavigation);
+	// 	};
+	// }, [handleNavigation]);
 
 	return (
 		<header
-			className={` absolute lg:fixed top-0 left-0 right-0 flex items-center justify-center z-40 sm:p-4 shadow-xl sm:shadow-none ${showNavBar} transition-all duration-300 `}>
+			className={` absolute  top-0 left-0 right-0 flex items-center justify-center z-40 sm:p-4 shadow-xl sm:shadow-none ${showNavBar} transition-all duration-300 `}>
 			<div className="container flex justify-around md:justify-between gap-2 p-2 items-center flex-col sm:flex-row sm:bg-base-200 sm:shadow-xl rounded-full ">
 				{/* logo */}
 				<figure className=" xl:w-96 p-2 ml-3" onClick={() => scroll.scrollToTop()}>
