@@ -33,10 +33,11 @@ function ProjectsCard({ data, length }) {
 		return (
 			<figure
 				data-tip={stackImage.attributes.name}
-				style={{ width: "1.25rem" }}
-				className="tooltip tooltip-neutral text-base-100"
+				style={{ width: "1.25rem", height: "1.25rem" }}
+				className={`tooltip tooltip-neutral text-base-100 
+				flex justify-center items-center  rounded-full text-center shadow-lg shadow-neutral bg-neutral `}
 				key={stackImage.id}>
-				<Image src={stackImage.attributes.url} alt={stackImage.attributes.name} width={25} height={25} />
+				<Image src={stackImage.attributes.url} alt={stackImage.attributes.name} width={25} height={25} className="object-cover " />
 			</figure>
 		);
 	});
@@ -53,7 +54,7 @@ function ProjectsCard({ data, length }) {
 					}}></div>
 				<div className=" w-full p-8 relative">
 					<h3>{results.title}</h3>
-					<div className="flex gap-4 mt-5">{mappedStackImg}</div>
+					<div className="flex gap-4 mt-5 ">{mappedStackImg}</div>
 					<button className="btn btn-secondary absolute rounded-full -top-6 right-2 shadow-xl " onClick={openModal} key={id}>
 						<FaAngleRight />
 					</button>
