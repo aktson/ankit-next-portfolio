@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useLangContext } from "../context/LangContext";
 import bgDark from "@public/images/hero-dark.svg";
 import { motion } from "framer-motion";
-import { wavyTextParent } from "@components/uicomponents/animationVariants/WavyText";
+import { wavyTextParent } from "@components/uicomponents/animationVariants/wavyText";
 import HeroHeading from "@components/uicomponents/animationVariants/HeroHeading";
 
 export function Hero() {
