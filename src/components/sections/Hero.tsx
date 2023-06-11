@@ -4,8 +4,8 @@ import Image from "next/image";
 import { useLangContext } from "../context/LangContext";
 import bgDark from "@public/images/hero-dark.svg";
 import { motion } from "framer-motion";
-import { wavyTextParent } from "../uicomponents/animationVariants/WavyText";
-import HeroHeading from "../uicomponents/animationVariants/HeroHeading";
+import { wavyTextParent } from "@components/uicomponents/animationVariants/WavyText";
+import HeroHeading from "@components/uicomponents/animationVariants/HeroHeading";
 
 export function Hero() {
 	const { isEng } = useLangContext();

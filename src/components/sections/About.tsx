@@ -1,11 +1,9 @@
-import React, { useContext, useRef } from "react";
+import React, { useRef } from "react";
 import ankit from "@public/images/ankitLightGray.jpg";
-import CardsAbout from "../uicomponents/CardsAbout";
+import CardsAbout from "@components/uicomponents/CardsAbout";
 import Image from "next/image";
-import { useLangContext } from "../context/LangContext";
-import { motion } from "framer-motion";
-import Heading from "../uicomponents/animationVariants/Heading";
-import { cardVariantsParent } from "../uicomponents/animationVariants/animationVariants";
+import { useLangContext } from "@components/context/LangContext";
+import Heading from "@components/uicomponents/animationVariants/Heading";
 
 export function About() {
 	const ref = useRef(null);

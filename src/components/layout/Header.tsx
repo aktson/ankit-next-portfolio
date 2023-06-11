@@ -3,10 +3,10 @@ import React, { FC } from "react";
 import { useState, useEffect, useCallback } from "react";
 import { ThemeToggler } from "@components/uicomponents/ThemeToggler";
 import Image from "next/image";
-import { useLangContext } from "../context/LangContext";
+import { useLangContext } from "@components/context/LangContext";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { SideBar } from "./mobile-nav/SideBar";
-import LanguageSelect from "../uicomponents/LanguageSelect";
+import LanguageSelect from "@components/uicomponents/LanguageSelect";
 import darkLogo from "@public/images/logo-dark.svg";
 
 /***** COMPONENT-FUNCTION *****/

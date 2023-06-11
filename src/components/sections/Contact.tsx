@@ -1,8 +1,8 @@
-import React, { useRef, useEffect, useReducer, useContext } from "react";
+import React, { useRef, useEffect, useReducer } from "react";
 import emailjs from "@emailjs/browser";
 import { FaCheck } from "react-icons/fa";
-import { useLangContext } from "../context/LangContext";
-import Heading from "../uicomponents/animationVariants/Heading";
+import { useLangContext } from "@components/context/LangContext";
+import Heading from "@components/uicomponents/animationVariants/Heading";
 
 const initialState = {
 	name: "",

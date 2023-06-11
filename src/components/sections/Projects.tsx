@@ -1,9 +1,9 @@
 /***** IMPORTS *****/
 import React, { FC } from "react";
 import { IProject } from "@/types";
-import ProjectsTabs from "../uicomponents/tabs/ProjectsTabs";
-import { useLangContext } from "../context/LangContext";
-import Heading from "../uicomponents/animationVariants/Heading";
+import ProjectsTabs from "@components/uicomponents/tabs/ProjectsTabs";
+import { useLangContext } from "@components/context/LangContext";
+import Heading from "@components/uicomponents/animationVariants/Heading";
 
 /***** TYPES *****/
 interface ProjectsProps {

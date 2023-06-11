@@ -1,8 +1,8 @@
 /***** IMPORTS *****/
 import React, { FC } from "react";
-import SkillsTabs from "../uicomponents/tabs/SkillsTabs";
-import { useLangContext } from "../context/LangContext";
-import Heading from "../uicomponents/animationVariants/Heading";
+import SkillsTabs from "@components/uicomponents/tabs/SkillsTabs";
+import { useLangContext } from "@components/context/LangContext";
+import Heading from "@components/uicomponents/animationVariants/Heading";
 import { ISkills } from "@/types";
 
 /***** TYPES *****/
