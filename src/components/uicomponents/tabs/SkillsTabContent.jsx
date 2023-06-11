@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { animationParent, skillsCardVariants } from "../animationVariants/animationVariants";
+import { skillsCardVariants } from "../animationVariants/animationVariants";
 import { motion } from "framer-motion";
 
 function TabsInner({ data }) {
@@ -9,7 +9,7 @@ function TabsInner({ data }) {
 			{data &&
 				data?.map((result) => {
 					return (
-						<motion.div key={result.id} initial="offscreen" whileInView="onscreen" viewport={{ amount: 0.8 }} variants={animationParent}>
+						<motion.div key={result.id} initial="offscreen" whileInView="onscreen" viewport={{ amount: 0.8 }}>
 							<motion.div
 								className="skills tooltip-neutral text-base-100"
 								data-tip={result.attributes.title}

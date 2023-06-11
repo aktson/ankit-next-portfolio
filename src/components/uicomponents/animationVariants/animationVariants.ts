@@ -72,7 +72,7 @@ export const imageVariant = {
 	},
 };
 
-const headingVariant = {
+export const headingVariant = {
 	offscreen: {
 		translateX: -100,
 		opacity: 0,

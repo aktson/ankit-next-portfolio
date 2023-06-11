@@ -4,7 +4,7 @@ import { Home } from "./Home";
 
 const baseUrl = "https://ankson.up.railway.app/";
 
-export async function getSkills() {
+async function getSkills() {
 	try {
 		const response = await fetch("https://ankson.up.railway.app/api/categories?populate=*");
 
@@ -36,11 +36,10 @@ async function fetchProjects() {
 }
 
 /***** COMPONENT-FUNCTION *****/
-async function page() {
+export default async function page() {
 	const skills = await getSkills();
 	const projects = await fetchProjects();
 
 	/*** Return Statement ***/
 	return <Home projects={projects} skills={skills} />;
 }
-export default page;
