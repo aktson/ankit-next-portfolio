@@ -11,7 +11,7 @@ const GoogleAnalytics = ({ GA_TRACKING_ID }: { GA_TRACKING_ID: string }) => {
                 function gtag(){window.dataLayer.push(arguments);}
                 gtag('js', new Date());
 
-                gtag('config', ${GA_TRACKING_ID});
+                gtag('config', "${GA_TRACKING_ID}");
                 `}
 			</Script>
 		</>

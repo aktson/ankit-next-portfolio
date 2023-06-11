@@ -9,11 +9,15 @@ export const metadata = {
 	},
 	icon: "/favicon.ico",
 	url: "https://ankitsoni.dev",
-	image: "../../public/images/ankitLightGray.jpg",
+	image: [
+		"../../public/images/ankitLightGray.jpg",
+		"https://github.com/aktson/ankit-next-portfolio/blob/main/public/images/ankitLightGray.jpg",
+		"https://github.com/aktson/ankit-next-portfolio/blob/main/public/images/ankit.jpg",
+	],
 	author: "Ankit Soni",
 	robots: "all",
 	description:
-		"professional freelance front-end developer or web designer. Ankit Soni is creative professional Front End Developer and web designer skilled in react, next, typescript and vanilla javascript based in Norway. Kreative profesjonell Front End Utvikler & web designer basert i Norge ",
+		"Kreative profesjonell Front-End Utvikler,  web designer og frilanser basert i Norge. Professional  front-end developer, web designer and freelancer based in Norway. Ankit Soni is creative professional Front End Developer and web designer skilled in react, next, typescript and vanilla javascript based in Norway.",
 	keywords: [
 		"ankit",
 		"soni",
@@ -40,9 +44,13 @@ export const metadata = {
 	openGraph: {
 		title: "Ankit Soni | Front-end Utvikler",
 		description:
-			"professional freelance front-end developer or web designer. Ankit Soni is creative professional Front End Developer and web designer skilled in react, next, typescript and vanilla javascript based in Norway. Kreative profesjonell Front End Utvikler & web designer basert i Norge ",
+			"Kreative profesjonell Front-End Utvikler,  web designer og frilanser basert i Norge. Professional front-end developer, web designer and freelancer based in Norway. Ankit Soni is creative professional Front End Developer and web designer skilled in react, next, typescript and vanilla javascript based in Norway.",
 		url: "https://ankitsoni.dev",
-		image: "https://github.com/aktson/ankit-next-portfolio/blob/main/public/images/ankitLightGray.jpg",
+		image: [
+			"../../public/images/ankitLightGray.jpg",
+			"https://github.com/aktson/ankit-next-portfolio/blob/main/public/images/ankitLightGray.jpg",
+			"https://github.com/aktson/ankit-next-portfolio/blob/main/public/images/ankit.jpg",
+		],
 		author: "Ankit Soni",
 		type: "website",
 	},
@@ -56,7 +64,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en" data-theme="dark">
-			<GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID!} />
+			<GoogleAnalytics GA_TRACKING_ID={process.env.NEXT_PUBLIC_GA_TRACKING_ID!} />
 			<body>
 				<div id="myportal" />
 				{children}
