@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { wavyTextChild } from "./WavyText";
+import { wavyTextChild } from "./wavyText";
 
 function HeroHeading({ heading, font }) {
 	return (
