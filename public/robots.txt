@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
+# Allow all crawlers
 User-agent: *
-Disallow:
-Sitemap: https://www.ankitsoni.dev/sitemap.xml
+Allow: /
