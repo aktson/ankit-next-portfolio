@@ -1,3 +1,4 @@
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "./styles/globals.css";
 
 export const metadata = {
@@ -55,6 +56,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en" data-theme="dark">
+			<GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID!} />
 			<body>
 				<div id="myportal" />
 				{children}
