@@ -9,11 +9,8 @@ export const metadata = {
 	},
 	icon: "/favicon.ico",
 	url: "https://ankitsoni.dev",
-	image: [
-		"../../public/images/ankitLightGray.jpg",
-		"https://github.com/aktson/ankit-next-portfolio/blob/main/public/images/ankitLightGray.jpg",
-		"https://github.com/aktson/ankit-next-portfolio/blob/main/public/images/ankit.jpg",
-	],
+	image: "https://ankitsoni.dev/image.jpg",
+	img: "https://ankitsoni.dev/image.jpg",
 	author: "Ankit Soni",
 	robots: "all",
 	description:
@@ -46,11 +43,6 @@ export const metadata = {
 		description:
 			"Kreative profesjonell Front-End Utvikler,  web designer og frilanser basert i Norge. Professional front-end developer, web designer and freelancer based in Norway. Ankit Soni is creative professional Front End Developer and web designer skilled in react, next, typescript and vanilla javascript based in Norway.",
 		url: "https://ankitsoni.dev",
-		image: [
-			"../../public/images/ankitLightGray.jpg",
-			"https://github.com/aktson/ankit-next-portfolio/blob/main/public/images/ankitLightGray.jpg",
-			"https://github.com/aktson/ankit-next-portfolio/blob/main/public/images/ankit.jpg",
-		],
 		author: "Ankit Soni",
 		type: "website",
 	},
