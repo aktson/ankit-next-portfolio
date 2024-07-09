@@ -10,17 +10,17 @@ export const metadata = {
 	icon: "/favicon.ico",
 	url: "https://ankitsoni.dev",
 	image: "https://ankitsoni.dev/image.jpg",
-	img: "https://ankitsoni.dev/image.jpg",
 	author: "Ankit Soni",
-	robots: "all",
+	robots: "index, follow",
 	description:
-		"Kreative profesjonell Front-End Utvikler,  web designer og frilanser basert i Norge. Professional  front-end developer, web designer and freelancer based in Norway. Ankit Soni is creative professional Front End Developer and web designer skilled in react, next, typescript and vanilla javascript based in Norway.",
+		"Creative professional Front-End Developer, web designer, and freelancer based in Norway. Ankit Soni specializes in React, Next.js, TypeScript, and vanilla JavaScript. // Kreativ profesjonell Front-End Utvikler, webdesigner og frilanser basert i Norge. Ankit Soni er spesialisert i React, Next.js, TypeScript og vanilje JavaScript.",
 	keywords: [
 		"ankit",
 		"soni",
 		"portfolio",
 		"Ankit Soni",
 		"oslo",
+		"material ui",
 		"web development",
 		"frilanser",
 		"freelancer",
@@ -28,29 +28,66 @@ export const metadata = {
 		"HTML",
 		"SCSS",
 		"CSS3",
-		"react.Js",
-		"react",
-		"next.Js",
-		"norge",
-		"norway",
+		"React.js",
+		"React",
+		"Next.js",
+		"Norge",
+		"Norway",
 		"web designer",
 		"web utvikler",
 		"front end developer",
 		"front end utvikler",
+		"Next",
 	],
 	openGraph: {
 		title: "Ankit Soni | Front-end Utvikler",
 		description:
-			"Kreative profesjonell Front-End Utvikler,  web designer og frilanser basert i Norge. Professional front-end developer, web designer and freelancer based in Norway. Ankit Soni is creative professional Front End Developer and web designer skilled in react, next, typescript and vanilla javascript based in Norway.",
+			"Creative professional Front-End Developer, web designer, and freelancer based in Norway. Ankit Soni specializes in React, Next.js, TypeScript, and vanilla JavaScript. // Kreativ profesjonell Front-End Utvikler, webdesigner og frilanser basert i Norge. Ankit Soni er spesialisert i React, Next.js, TypeScript og vanilje JavaScript.",
 		url: "https://ankitsoni.dev",
 		author: "Ankit Soni",
 		type: "website",
+		image: "https://ankitsoni.dev/image.jpg",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Ankit Soni | Front-end Utvikler",
+		description:
+			"Creative professional Front-End Developer, web designer, and freelancer based in Norway. Ankit Soni specializes in React, Next.js, TypeScript, and vanilla JavaScript. // Kreativ profesjonell Front-End Utvikler, webdesigner og frilanser basert i Norge. Ankit Soni er spesialisert i React, Next.js, TypeScript og vanilje JavaScript.",
+		image: "https://ankitsoni.dev/image.jpg",
 	},
 	googleBot: {
 		index: true,
-		follow: false,
+		follow: true,
 	},
-	themeColor: "dark",
+	themeColor: "#000000",
+	structuredData: {
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Ankit Soni",
+		"url": "https://ankitsoni.dev",
+		"image": "https://ankitsoni.dev/image.jpg",
+		"jobTitle": "Front-End Developer",
+		"worksFor": {
+			"@type": "Organization",
+			"name": "Freelancer"
+		},
+		"sameAs": [
+			"https://www.linkedin.com/in/ankit-soni",
+			"https://github.com/ankitsoni"
+		],
+		"description": "Creative professional Front-End Developer, web designer, and freelancer based in Norway. Ankit Soni specializes in React, Next.js, TypeScript, and vanilla JavaScript. // Kreativ profesjonell Front-End Utvikler, webdesigner og frilanser basert i Norge. Ankit Soni er spesialisert i React, Next.js, TypeScript og vanilje JavaScript.",
+		"keywords": [
+			"Front-End Developer",
+			"Web Designer",
+			"Freelancer",
+			"React",
+			"Next.js",
+			"TypeScript",
+			"JavaScript",
+			"Norge",
+			"Norway"
+		]
+	}
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
