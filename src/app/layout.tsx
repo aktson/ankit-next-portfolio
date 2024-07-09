@@ -86,6 +86,7 @@ export const metadata = {
 			"JavaScript",
 			"Norge",
 			"Norway"
+			"material ui"
 		]
 	}
 };
