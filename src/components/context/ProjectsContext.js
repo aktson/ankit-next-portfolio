@@ -11,7 +11,7 @@ export function ProjectsProvider({ children }) {
 
   async function fetchData() {
     setLoading(true)
-    const url = baseUrl + "api/projects?populate=*";
+    const url = "https://portfolio-railway.onrender.com/" + "api/projects?populate=*";
 
     const response = await fetch(url);
 

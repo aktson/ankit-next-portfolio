@@ -2,11 +2,11 @@
 import React from "react";
 import { Home } from "./Home";
 
-const baseUrl = "https://ankson.up.railway.app/";
+const baseUrl = "https://portfolio-railway.onrender.com/";
 
 async function getSkills() {
 	try {
-		const response = await fetch("https://ankson.up.railway.app/api/categories?populate=*");
+		const response = await fetch(baseUrl + "api/categories?populate=*");
 
 		const data = await response.json();
 		if (response.ok) {

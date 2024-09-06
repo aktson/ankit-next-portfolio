@@ -8,24 +8,25 @@ function Tabs({ skills }) {
 	const [active, setActive] = useState("all");
 	const [filteredData, setFilteredData] = useState([]);
 
+
 	function handleClick(type) {
 		switch (type) {
 			case "frontend":
-				const frontendData = skills.filter((result) => {
+				const frontendData = (skills || []).filter((result) => {
 					return result.attributes.category === "frammework";
 				});
 				setActive("frontend");
 				setFilteredData(frontendData);
 				break;
 			case "design":
-				const designData = skills.filter((result) => {
+				const designData = (skills || []).filter((result) => {
 					return result.attributes.category === "design";
 				});
 				setActive("design");
 				setFilteredData(designData);
 				break;
 			case "other":
-				const otherData = skills.filter((result) => {
+				const otherData = (skills || []).filter((result) => {
 					return result.attributes.category === "cms";
 				});
 				setActive("other");

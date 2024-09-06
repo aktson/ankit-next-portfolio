@@ -14,6 +14,7 @@ import { Projects } from "@components/sections/Projects";
 import { motion, useScroll } from "framer-motion";
 import { IProject, ISkills } from "@/types";
 
+
 interface IPagination {
 	page: number;
 	pageSize: number;
@@ -26,8 +27,11 @@ interface HomeProps {
 	skills?: { data: ISkills; meta: { pagination: IPagination } };
 }
 
+
+
 /***** COMPONENT-FUNCTION *****/
-export const Home: FC<HomeProps> = ({ projects, skills }): JSX.Element => {
+export const Home: FC<HomeProps> = async ({ projects, skills }): Promise<JSX.Element> => {
+
 	const projectsData = projects?.data.sort((a, b) => {
 		const aPublishedDate = new Date(a.attributes.createdAt).getTime();
 		const bPublishedDate = new Date(b.attributes.createdAt).getTime();

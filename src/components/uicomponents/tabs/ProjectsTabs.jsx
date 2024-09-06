@@ -12,7 +12,7 @@ function ProjectsTabs({ projects: data }) {
 	function handleClick(type) {
 		switch (type) {
 			case "js":
-				const jsData = data.filter((result) => {
+				const jsData = (data || []).filter((result) => {
 					return result.attributes.category === "javascript";
 				});
 				setActive("js");

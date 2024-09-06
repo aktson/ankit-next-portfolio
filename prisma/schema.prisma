@@ -1,0 +1,119 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Category {
+  id          Int       @id @default(autoincrement())
+  title       String?   @db.VarChar(255)
+  category    String?   @db.VarChar(255)
+  createdAt   DateTime? @default(now()) @db.Timestamp(6)
+  updatedAt   DateTime? @updatedAt @db.Timestamp(6)
+  publishedAt DateTime? @db.Timestamp(6)
+
+  // Relations
+  //   projectLinks        CategoryProjectLink[] @relation("ProjectLinks")
+  //   CategoryProjectLink CategoryProjectLink[]
+  // }
+}
+
+// model CategoryProjectLink {
+//   id         Int @id @default(autoincrement())
+//   categoryId Int
+//   projectId  Int
+
+//   // Relations
+
+//   Category Category @relation(fields: [categoryId], references: [id])
+//   Project  Project  @relation(fields: [projectId], references: [id])
+// }
+
+model File {
+  id               Int      @id @default(autoincrement())
+  name             String?  @db.VarChar(255)
+  alternativeText  String?  @db.VarChar(255)
+  caption          String?  @db.VarChar(255)
+  width            Int?
+  height           Int?
+  formats          Json?
+  hash             String?  @db.VarChar(255)
+  ext              String?  @db.VarChar(255)
+  mime             String?  @db.VarChar(255)
+  size             Decimal? @db.Decimal(10, 2)
+  url              String?  @db.VarChar(255)
+  previewUrl       String?  @db.VarChar(255)
+  provider         String?  @db.VarChar(255)
+  providerMetadata Json?
+
+  // Timestamps
+  createdAt DateTime? @default(now()) @db.Timestamp(6)
+  updatedAt DateTime? @updatedAt @db.Timestamp(6)
+
+  // Relations
+  projects Project[] @relation("ProjectFiles")
+}
+
+model Nhss {
+  id          Int       @id @default(autoincrement())
+  title       String?   @db.VarChar(255)
+  description String?
+  tag         String?   @db.VarChar(255)
+  createdAt   DateTime? @default(now()) @db.Timestamp(6)
+  updatedAt   DateTime? @updatedAt @db.Timestamp(6)
+  publishedAt DateTime? @db.Timestamp(6)
+}
+
+model NosoHome {
+  id                Int       @id @default(autoincrement())
+  heroBannerAltText String?   @db.VarChar(255)
+  createdAt         DateTime? @default(now()) @db.Timestamp(6)
+  updatedAt         DateTime? @updatedAt @db.Timestamp(6)
+  publishedAt       DateTime? @db.Timestamp(6)
+}
+
+model Noso {
+  id           Int       @id @default(autoincrement())
+  title        String?   @db.VarChar(255)
+  description  String?
+  price        Decimal?  @db.Decimal(10, 2)
+  featured     Boolean?
+  imageAltText String?   @db.VarChar(255)
+  category     String?   @db.VarChar(255)
+  createdAt    DateTime? @default(now()) @db.Timestamp(6)
+  updatedAt    DateTime? @updatedAt @db.Timestamp(6)
+  publishedAt  DateTime? @db.Timestamp(6)
+}
+
+model Product {
+  id          Int       @id @default(autoincrement())
+  title       String?   @db.VarChar(255)
+  description String?
+  price       Int?
+  imageUrl    String?   @db.VarChar(255)
+  createdAt   DateTime? @default(now()) @db.Timestamp(6)
+  updatedAt   DateTime? @updatedAt @db.Timestamp(6)
+  publishedAt DateTime? @db.Timestamp(6)
+}
+
+model Project {
+  id             Int       @id @default(autoincrement())
+  title          String?   @db.VarChar(255)
+  stack          String?   @db.VarChar(255)
+  url            String?   @db.VarChar(255)
+  summary        String?
+  github         String?   @db.VarChar(255)
+  createdAt      DateTime? @default(now()) @db.Timestamp(6)
+  updatedAt      DateTime? @updatedAt @db.Timestamp(6)
+  publishedAt    DateTime? @db.Timestamp(6)
+  category       String?   @db.VarChar(255)
+  summaryEnglish String?
+  files          File[]    @relation("ProjectFiles")
+
+  // // Relations
+  // categoryLinks       CategoryProjectLink[] @relation("ProjectLinks")
+  // CategoryProjectLink CategoryProjectLink[]
+}
